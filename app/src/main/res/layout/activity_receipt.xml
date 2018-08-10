@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/receipt_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.minyoung.test_pos.receipt">
+    <TextView
+        android:text="매장 : 무목마트 충남대점"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/receipt_date"
+        android:text="판매일자: 2017-11-09, 17:39:30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="--------------------------------------------------------------------------------------------"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Bacode           상품명           단가    수량    금액"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+  <ListView
+      android:id="@+id/listview3"
+      android:layout_gravity="center_horizontal"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+  </ListView>
+    <TextView
+        android:text="--------------------------------------------------------------------------------------------"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/receipt_price"
+        android:text="총 판매액                                             4400"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/receipt_sale"
+        android:text="할인 금액                                               400"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/receipt_willreceive"
+        android:text="받을 금액                                             4000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/receipt_received"
+        android:text="받은 돈                                                 4000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="---------------------------------------------------------------------"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/receipt_method"
+        android:text="[카드]                                                 4000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/ok"
+        android:onClick="move"
+        android:text="확인"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

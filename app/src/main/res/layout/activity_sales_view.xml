@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.minyoung.test_pos.Sales_view">
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/select"
+            android:text="오늘"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/content"
+            android:text="무목마트의 매출액은"
+            android:textSize="20dp"
+            android:layout_below="@id/select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="(?)"
+            android:id="@+id/total"
+            android:textSize="35dp"
+            android:layout_below="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="원 입니다."
+            android:layout_alignBaseline="@+id/total"
+            android:layout_below="@+id/content"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</RelativeLayout>
